@@ -19,3 +19,12 @@ class Vector(object):
 
     def __eq__(self, v):
         return self.coordinates == v.coordinates
+
+
+    def add(self, otherVector):
+        selfCoordinates = list(self.coordinates)
+        otherCoordinates = list(otherVector.coordinates)
+        for count in range(self.dimension):
+            print("count: ",count)
+            selfCoordinates[count] +=  otherCoordinates[count]
+        self.coordinates = tuple(selfCoordinates)
