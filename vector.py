@@ -25,6 +25,18 @@ class Vector(object):
         selfCoordinates = list(self.coordinates)
         otherCoordinates = list(otherVector.coordinates)
         for count in range(self.dimension):
-            print("count: ",count)
             selfCoordinates[count] +=  otherCoordinates[count]
+        self.coordinates = tuple(selfCoordinates)
+
+    def subtract(self, otherVector):
+        selfCoordinates = list(self.coordinates)
+        otherCoordinates = list(otherVector.coordinates)
+        for count in range(self.dimension):
+            selfCoordinates[count] -=  otherCoordinates[count]
+        self.coordinates = tuple(selfCoordinates)
+
+    def scalarMultiply(self, scalarVal):
+        selfCoordinates = list(self.coordinates)
+        for count in range(self.dimension):
+            selfCoordinates[count] *=  scalarVal
         self.coordinates = tuple(selfCoordinates)
