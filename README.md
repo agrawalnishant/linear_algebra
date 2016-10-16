@@ -1,2 +1,2 @@
-# linear_algebra
-Linear Algebra
+# Linear Algebra
+Collection of Linear Algebra libs
