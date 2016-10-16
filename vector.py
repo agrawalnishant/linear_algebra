@@ -22,21 +22,14 @@ class Vector(object):
 
 
     def add(self, otherVector):
-        selfCoordinates = list(self.coordinates)
-        otherCoordinates = list(otherVector.coordinates)
-        for count in range(self.dimension):
-            selfCoordinates[count] +=  otherCoordinates[count]
-        self.coordinates = tuple(selfCoordinates)
-
+        new_coords = [sc + oc for sc,oc in zip(self.coordinates, otherVector.coordinates)]
+        return Vector(new_coords)
+    
     def subtract(self, otherVector):
-        selfCoordinates = list(self.coordinates)
-        otherCoordinates = list(otherVector.coordinates)
-        for count in range(self.dimension):
-            selfCoordinates[count] -=  otherCoordinates[count]
-        self.coordinates = tuple(selfCoordinates)
+        new_coords = [sc - oc for sc,oc in zip(self.coordinates, otherVector.coordinates)]
+        return Vector(new_coords)
+
 
     def scalarMultiply(self, scalarVal):
-        selfCoordinates = list(self.coordinates)
-        for count in range(self.dimension):
-            selfCoordinates[count] *=  scalarVal
-        self.coordinates = tuple(selfCoordinates)
+        new_coords = [scalarVal * sc for sc in self.coordinates]
+        return Vector(new_coords)
