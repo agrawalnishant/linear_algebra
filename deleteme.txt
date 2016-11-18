@@ -1,0 +1,8 @@
+Delhi to Blr, booking id: NF7262577397615
+For above booking, I got 1200 cashback in wallet, and then it was removed. Although I cancelled one person out of three from trip, but still the amount was above that required for cashback.
+
+
+Blr to Delhi, Round Trip: booking id: NF7261179769543
+For this booking, I neither got cashback, nor the coupon discount for Standard Chartered bank was applied. 
+Although during booking, message was shown that coupon has been applied.
+Also the previous cashback in wallet was not applied, even when the option to deduct from wallet was selected.
