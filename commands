@@ -1,0 +1,3 @@
+rabbitmq-plugins enable rabbitmq_management
+consul agent -dev
+http://localhost:62301/hystrix/monitor?stream=http%3A%2F%2Flocalhost%3A62301%2Fhystrix.stream
